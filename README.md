@@ -16,3 +16,5 @@
 
 - https://www.udemy.com/the-complete-nodejs-developer-course-2/
 - [Status Codes](https://httpstatuses.com/)
+- [Mongoose Model Query & CRUD Operations](https://mongoosejs.com/docs/queries.html)
+

@@ -2,7 +2,6 @@
 
 // This file is the starting point for the API and contains the Express server
 
-
 const express = require('express');
 require('./db/mongoose.js');
 const User = require('./models/user');
@@ -26,6 +25,16 @@ app.post('/users', (req, res) => {
         res.send(error)
     })
 });
+
+// Get a list of users
+app.get('/users', (req,res) => {
+    User.find({}).then((users) => {
+        res.send(users)
+    }).catch((error) => {
+        res.status(500).send()
+    })
+});
+
 
 // --- TASKS ---
 // Create a task
