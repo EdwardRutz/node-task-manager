@@ -15,3 +15,4 @@
 ## More Information
 
 - https://www.udemy.com/the-complete-nodejs-developer-course-2/
+- [Status Codes](https://httpstatuses.com/)
