@@ -11,16 +11,4 @@ mongoose.connect('mongodb+srv://analyst:MikeHotel@dsch-jg49z.mongodb.net/test?re
 });
 
 
-// --- Task data ---
-// Create a Task model
-const Task = mongoose.model('Task', {
-    description: {
-        type: String,
-        required: true,
-        trim: true
-    },
-    completed: {
-        type: Boolean,
-        default: false
-    }
-});
+
