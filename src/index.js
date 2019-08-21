@@ -1,21 +1,19 @@
 const express = require('express');
+require('./db/mongoose.js');
+const User = require('./models/user');
 
 const app = express();
 const port = process.env.PORT || 3001;
 
-app.post('/users', async (req, res) => {
-    // const user = new User(req.body);
+// Parse incoming data into an object
+app.use(express.json());
+
+// Get data to create a new user
+// Create a user
+app.post('/users', (req, res) => {
+    console.log(req.body);
     res.send('testing!');
-    try {
-        await user.save();
-        res.status(201).send(user)
-    } catch (e) {
-        res.status(400).send(e)
-    }
 });
-
-
-
 
 
 
