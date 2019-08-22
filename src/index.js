@@ -35,6 +35,17 @@ app.get('/users', (req,res) => {
     })
 });
 
+// Get a specific user
+app.get('/users/:id', (req, res) => {
+    const _id = req.params.id;
+
+    User.findById(_id).then((user) => {
+
+    }).catch((error) => {
+
+    })
+});
+
 
 // --- TASKS ---
 // Create a task
